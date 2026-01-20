@@ -1,0 +1,24 @@
+
+BUILDING RAG SYSTEM:
+DOCUMENT-->TEXT EXTRACTED-->SPLIT INTO CHUNKS-->CONVERTS INTO VECTORS(EMBEDDING)
+                                                                       |
+                                                                       |
+                                                                    VECTOR DB-->COLLECTS RELEVANT DATA-->RESPONSE
+                                                                       |
+                                                                       |
+                                                            QUERY CONVERTED TO VECTOR
+                                                                       |
+                                                                       |
+                                                                     QUERY
+
+TOOLS USED:
+-> Python - Main Language
+-> LangChain - used for loading PDFs, chunking text, creating retrievers, Building the RAG chain
+-> HuggingFace - Text embeddings(semantic meaning)
+-> Vector DB - Used to store vectors adn find similar ones
+             - FAISS - fast, local
+-> LLMs
+-> Embedding Model - to convert text to vectors
+-> Prompt Template
+
+
