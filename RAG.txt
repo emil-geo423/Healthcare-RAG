@@ -1,24 +1,33 @@
 
 BUILDING RAG SYSTEM:
-DOCUMENT-->TEXT EXTRACTED-->SPLIT INTO CHUNKS-->CONVERTS INTO VECTORS(EMBEDDING)
-                                                                       |
-                                                                       |
-                                                                    VECTOR DB-->COLLECTS RELEVANT DATA-->RESPONSE
-                                                                       |
-                                                                       |
-                                                            QUERY CONVERTED TO VECTOR
-                                                                       |
-                                                                       |
-                                                                     QUERY
+1.DOCUMENT-->2.TEXT EXTRACTION-->3.CHUNKING-->4.CONVERTS INTO VECTORS(EMBEDDING)
+                                                            |
+                                                            |
+                                                         5.VECTOR DB-->8.COLLECTS RELEVANT DATA-->9.RESPONSE FOR THE QUERY
+                                                            |
+                                                            |
+                                                7.QUERY CONVERTED TO VECTOR
+                                                            |
+                                                            |
+                                                         6.QUERY
 
 TOOLS USED:
--> Python - Main Language
--> LangChain - used for loading PDFs, chunking text, creating retrievers, Building the RAG chain
--> HuggingFace - Text embeddings(semantic meaning)
--> Vector DB - Used to store vectors adn find similar ones
+1. Python - Main Language
+2. LangChain - used for loading PDFs, chunking text, creating retrievers, Building the RAG chain
+3. HuggingFace - Text embeddings(semantic meaning)
+4. Embedding Model - to convert text to vectors
+5. Vector DB - Used to store vectors and find similar ones using distance metrics(L2)
              - FAISS - fast, local
--> LLMs
--> Embedding Model - to convert text to vectors
--> Prompt Template
+             - Semantic similarity search
+6. LLMs
+7. Prompt Template
+
+FAISS:
+It is a vector database used in RAG system to store embeddings and perform fast semantic similarity search. 
+It does not scan each vector, instead, it uses optimized indexing to quickly retrieve the most relevant 
+vectors based on distance metrics like L2 or cosine similarity. This makes retrieval scalable, efficient and
+suitable for large document collections
+
+
 
 
