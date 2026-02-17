@@ -1,9 +1,10 @@
-Healthcare Research Assistant using RAG
+Research Assistant using RAG
 
 -----------------------------------------
 Overview
-This project implements a Retrieval-Augmented Generation (RAG) system that answers healthcare-related questions strictly based on uploaded research papers.
+This project implements a Retrieval-Augmented Generation (RAG) system that answers questions strictly based on uploaded research papers.
 Instead of relying on general model knowledge, the system retrieves relevant document sections and generates grounded, non-hallucinated answers.
+Designed to include multiple chats and stores chat memory.
 
 -----------------------------------------
 How the System Works
@@ -35,8 +36,8 @@ Tech Stack
 
 -----------------------------------------
 Use Cases
--Medical research assistance
--Clinical literature review
+Research assistance
+-Literature review
 -Enterprise document QA
 -Policy and compliance clarification systems
 
