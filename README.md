@@ -10,9 +10,9 @@ Designed to include multiple chats and stores chat memory.
 How the System Works
 1. PDF Ingestion – Research papers are loaded and converted into text
 2. Chunking – Long documents are split into overlapping chunks
-3. Embeddings – Each chunk is converted into semantic vectors
+3. Embeddings – Each chunk is converted into semantic vectors(HuggingFace embeddings)
 4. Vector Store (FAISS) – Enables fast similarity-based retrieval
-5. LLM Generation – A Hugging Face model generates answers using only retrieved context
+5. LLM Generation – Phi-3 Mini model via ollama
 
 -----------------------------------------
 Architecture
@@ -23,7 +23,7 @@ Key Features
 ->Domain-restricted (answers only from uploaded documents)
 ->Semantic search (not keyword-based)
 ->Hallucination control using prompt constraints
-->Fully offline & free (Hugging Face models)
+->Fully offline & free
 ->Easily extendable to other domains (finance, policy, enterprise)
 
 -----------------------------------------
