@@ -36,11 +36,9 @@ Tech Stack
 
 -----------------------------------------
 Use Cases
-Research assistance
+-Research assistance
 -Literature review
 -Enterprise document QA
 -Policy and compliance clarification systems
 
 -----------------------------------------
-Disclaimer
-THIS SYSTEM IS FOR RESEARCH AND EDUCATIONAL PURPOSE ONLY. DO NOT USE THIS FOR DIAGNOSIS
